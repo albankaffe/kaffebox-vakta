@@ -1,0 +1,49 @@
+# Henter ferske data fra kaffebox.no hver morgen, lagrer historikken i repoet
+# og publiserer siden på GitHub Pages.
+name: Oppdater Kaffebox-vakta
+
+on:
+  schedule:
+    - cron: "0 5 * * *" # 05:00 UTC = 06:00 vintertid / 07:00 sommertid
+  workflow_dispatch: # gir en «Run workflow»-knapp under Actions
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: kaffebox-vakta
+  cancel-in-progress: false
+
+jobs:
+  oppdater:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    env:
+      TZ: Europe/Oslo
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer ImageMagick ved behov
+        run: command -v convert || (sudo apt-get update && sudo apt-get install -y imagemagick)
+
+      - name: Hent data og bygg siden
+        run: bash hent.sh
+
+      - name: Lagre historikken i repoet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A snapshots events.json sporing-startet.txt bilder
+          git commit -m "Data $(date +%Y-%m-%d)" || echo "Ingen endringer å lagre"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
