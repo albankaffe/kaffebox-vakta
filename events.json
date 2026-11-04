@@ -1,0 +1,335 @@
+[
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "utsolgt",
+    "id": 380089,
+    "name": "Friis-Holm Chokolade La Dalia 100 % The Lazy Cocoa Growers Blend"
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "pris",
+    "id": 464462,
+    "name": "Profitec MOVE Espresso Machine with Double Boiler &#8211; Base Black",
+    "from": 21950,
+    "to": 19950,
+    "fromMax": null,
+    "toMax": null,
+    "fromRegular": 21950,
+    "toRegular": 21950
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 19547,
+    "name": "Scandinavian Specialty Coffee Advent Calendar",
+    "n": 17
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 83763,
+    "name": "Chemex Bonded Filters FS-100, Pre-Folded Squares (6 to 10 Cup)",
+    "n": 2
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 128684,
+    "name": "Chocolate Mystery Box",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "paafyll",
+    "id": 156761,
+    "name": "Comandante Red Clix RX35",
+    "n": 4
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 167100,
+    "name": "Clear Comandante Bean Jar &#8211; Set of 4",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 186102,
+    "name": "Aeropress Go",
+    "n": 8
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 230365,
+    "name": "Simply HARIO V60 Glass Brewing Kit",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 237064,
+    "name": "Hario V60 Metal Dripper",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 247630,
+    "name": "Hario V60 Filter Paper Stand",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 282496,
+    "name": "Fjåk Sjokolade &#8211; 45% milk nibs &#038; oak smoked salt craft chocolate bar",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "paafyll",
+    "id": 286750,
+    "name": "Fellow Brew Burrs &#8211; Ode Gen 2",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 298471,
+    "name": "Pourx Oura Smart Light-Guided Coffee Scale",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 298484,
+    "name": "Pourx Oura Heat Resistant Pad",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 305035,
+    "name": "Fjåk Sjokolade &#8211; Single Origin 100% Uganda Drinking Chocolate",
+    "n": 2
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 320507,
+    "name": "Cafec Tsubame Pro Pouring Kettle",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 325065,
+    "name": "RAVN Chill Vibes Doubled-Walled Espresso Glass",
+    "n": 2
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 339007,
+    "name": "Fjåk White &amp; Nibs craft chocolate bar",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 340788,
+    "name": "Subminimal Flick WDT Tool",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 346577,
+    "name": "Coffee Roasters Companion",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 355681,
+    "name": "The Coffee Taster&#8217;s Flavor Wheel Poster -SCA",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "paafyll",
+    "id": 356431,
+    "name": "Timemore Black Mirror 3 Coffee Brew Scale",
+    "n": 20
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 358168,
+    "name": "Timemore Black Mirror Mini Espresso Scale",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 368762,
+    "name": "CAFEC Abaca Plus Deep 27 Coffee Filter",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 373633,
+    "name": "G-IOTA DF64 Gen 2 Coffee Grinder",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 376656,
+    "name": "Comandante Long Neck Brush #6",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 380089,
+    "name": "Friis-Holm Chokolade La Dalia 100 % The Lazy Cocoa Growers Blend",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 388327,
+    "name": "Subminimal Subscale Digital Coffee Dosing Cup",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 401549,
+    "name": "Eureka Oro Mignon Single Dose Pro 65 Coffee Grinder",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 420318,
+    "name": "E61 Group Head Replacement Shower Screen",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 422576,
+    "name": "Advent Chocolate Tasting pack",
+    "n": 2
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 425900,
+    "name": "Barista Digital Coffee Scale",
+    "n": 2
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 434908,
+    "name": "KBX Grinder Transit Box Case",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 436665,
+    "name": "Fjåk White Caramelized &amp; Brown Cheese Drinking Chocolate",
+    "n": 2
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 439657,
+    "name": "Timemore C5S Pro Manual Coffee Grinder with Foldable Handle",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "paafyll",
+    "id": 457169,
+    "name": "Cafiza2 Espresso Machine Cleaning Powder 900g",
+    "n": 11
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 457401,
+    "name": "Fjåk 72% Single Origin Dark Nicaragua Drinking Chocolate",
+    "n": 4
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 463525,
+    "name": "APAX LAB TDS Meter",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 467410,
+    "name": "Fjåk 85% Single Origin Dark Thailand Drinking Chocolate",
+    "n": 2
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 468402,
+    "name": "Chelbesa, Ethiopia Filter &#8211; Quo Coffee",
+    "n": 2
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 471530,
+    "name": "Nord &#8211; Condor, Colombia &#8211; 250g",
+    "n": 2
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 472853,
+    "name": "Wacaco Exagram Compact Coffee Scale",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 473922,
+    "name": "Profitec ECM Boiler Level Probe G1/4&#8243; 80 mm (C199900839)",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 474312,
+    "name": "Alaka Korchema, Ethiopia Filter &#8211; Quo Coffee",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 475005,
+    "name": "Yirgacheffe, Ethiopia Filter &#8211; AVE Kafferosteri",
+    "n": 1
+  },
+  {
+    "at": "2026-11-02T18:51:20",
+    "kind": "solgt",
+    "id": 475007,
+    "name": "Gatagua, Kenya Filter &#8211; AVE Kafferosteri",
+    "n": 3
+  }
+]

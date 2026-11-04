@@ -1,0 +1,352 @@
+<title>Kaffebox-vakta</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style id="kb-style">
+/* Layout: smal lesekolonne – topp med nøkkeltall, faner, filterlinje, deretter en tidslinje gruppert per dag */
+:root {
+  --bg: #f3f1ee;
+  --surface: #fbfaf8;
+  --ink: #22201d;
+  --muted: #6f6a63;
+  --line: #dcd7d0;
+  --accent: #5b3a24;      /* brent kaffebønne */
+  --accent-soft: #ebe1d8;
+  --up: #b42318;  --up-soft: #fbe5e2;
+  --down: #1f7a4d; --down-soft: #dff1e7;
+  --font-display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #171513; --surface: #201d1a; --ink: #ede8e2; --muted: #a39b91; --line: #3a3530;
+  --accent: #d9a77f; --accent-soft: #33281f;
+  --up: #f2877b; --up-soft: #3a1f1c; --down: #6fcf9c; --down-soft: #18302299;
+  color-scheme: dark;
+} }
+:root[data-theme="dark"] {
+  --bg: #171513; --surface: #201d1a; --ink: #ede8e2; --muted: #a39b91; --line: #3a3530;
+  --accent: #d9a77f; --accent-soft: #33281f;
+  --up: #f2877b; --up-soft: #3a1f1c; --down: #6fcf9c; --down-soft: #18302299;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font: 15px/1.5 var(--font-body);
+  padding-block: 28px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 860px; margin: 0 auto; display: grid; gap: 28px; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+header { display: grid; gap: 6px; }
+.eyebrow { font: 500 12px/1 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { font: 700 clamp(34px, 7vw, 52px)/1 var(--font-display); letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+h1 span { color: var(--accent); }
+.lede { color: var(--muted); margin: 4px 0 0; max-width: 60ch; }
+
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.stat { padding: 14px 16px 14px 0; display: grid; gap: 2px; }
+.stat + .stat { padding-left: 16px; border-left: 1px solid var(--line); }
+.stat b { font: 700 30px/1.1 var(--font-display); font-variant-numeric: tabular-nums; }
+.stat small { color: var(--muted); font-size: 13px; }
+@media (max-width: 560px) {
+  .stats { grid-template-columns: 1fr 1fr; }
+  .stat:nth-child(3) { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); }
+  .stat:nth-child(4) { border-top: 1px solid var(--line); }
+}
+
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+.tab {
+  appearance: none; border: 0; background: none; color: var(--muted); cursor: pointer;
+  font: 600 15px/1 var(--font-body); padding: 12px 14px; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap;
+}
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.tab .n { font: 500 12px/1 var(--font-mono); color: var(--muted); margin-left: 6px; }
+
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.controls input, .controls select {
+  font: 14px var(--font-body); color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; min-width: 0;
+}
+.controls input { flex: 1 1 220px; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { appearance: none; border: 0; background: var(--surface); color: var(--muted); font: 500 13px var(--font-body); padding: 8px 11px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--accent-soft); color: var(--ink); }
+.check { display: inline-flex; gap: 6px; align-items: center; font-size: 13px; color: var(--muted); }
+
+.day { display: grid; gap: 0; }
+.day h3 { font: 500 12px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; display: flex; gap: 10px; }
+.day h3 em { font-style: normal; color: var(--ink); }
+.list { display: grid; gap: 22px; }
+.row {
+  display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 4px 14px; align-items: baseline;
+  padding: 12px 0; border-top: 1px solid var(--line);
+}
+.row .thumb {
+  grid-row: 1 / span 2; grid-column: 1; align-self: start; width: 56px; aspect-ratio: 1; max-width: 100%;
+  border-radius: 6px; background: #fff; border: 1px solid var(--line); object-fit: contain; overflow: hidden;
+}
+.row .thumb.none { background: var(--accent-soft); border-color: transparent; }
+.row .name { grid-column: 2; font-weight: 600; text-decoration: none; min-width: 0; }
+.row .name:hover { text-decoration: underline; text-underline-offset: 3px; }
+.row .meta { grid-column: 2; color: var(--muted); font-size: 13px; display: flex; flex-wrap: wrap; gap: 4px 10px; }
+@media (max-width: 480px) { .row { grid-template-columns: 44px minmax(0, 1fr) auto; gap: 4px 10px; } .row .thumb { width: 44px; } }
+.row .price { grid-row: 1 / span 2; grid-column: 3; text-align: right; font: 500 15px/1.3 var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.price s { color: var(--muted); font-size: 13px; display: block; }
+.pill { display: inline-block; font: 500 12px/1 var(--font-mono); padding: 4px 7px; border-radius: 999px; margin-top: 4px; }
+.pill.up { color: var(--up); background: var(--up-soft); }
+.pill.down { color: var(--down); background: var(--down-soft); }
+.pill.neutral { color: var(--muted); background: var(--accent-soft); }
+.tag { font: 500 11px/1 var(--font-mono); text-transform: uppercase; letter-spacing: .05em; padding: 3px 6px; border-radius: 4px; background: var(--accent-soft); color: var(--accent); }
+.tag.out { background: transparent; border: 1px solid var(--line); color: var(--muted); }
+
+.rank { font: 500 13px/1 var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; margin-right: 8px; }
+.section-head { display: grid; gap: 4px; margin-top: 8px; }
+.section-head h2 { font: 700 22px/1.2 var(--font-display); margin: 0; }
+.section-head p { margin: 0; color: var(--muted); font-size: 14px; max-width: 62ch; }
+.empty { border: 1px dashed var(--line); border-radius: 12px; padding: 28px 24px; display: grid; gap: 8px; background: var(--surface); }
+.empty h3 { margin: 0; font: 700 20px/1.2 var(--font-display); }
+.empty p { margin: 0; color: var(--muted); max-width: 60ch; }
+.more { justify-self: start; appearance: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 8px; padding: 9px 14px; font: 500 14px var(--font-body); cursor: pointer; }
+footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 14px; }
+</style>
+
+<template id="kb-markup">
+<div class="wrap">
+  <header>
+    <div class="eyebrow" id="updated">Oppdatert –</div>
+    <h1>Kaffebox<span>-vakta</span></h1>
+    <p class="lede">Nye produkter og prisendringer i nettbutikken til kaffebox.no, hentet fra butikkens eget produktregister.</p>
+  </header>
+
+  <section class="stats" aria-label="Nøkkeltall">
+    <div class="stat"><b id="s-new">–</b><small>nye siste 30 dager</small></div>
+    <div class="stat"><b id="s-price">–</b><small id="s-price-l">prisendringer</small></div>
+    <div class="stat"><b id="s-sale">–</b><small>på tilbud nå</small></div>
+    <div class="stat"><b id="s-total">–</b><small>produkter totalt</small></div>
+  </section>
+
+  <main style="display:grid;gap:18px;min-width:0">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-nyheter" data-view="nyheter">Nye produkter<span class="n" id="n-nyheter"></span></button>
+      <button class="tab" role="tab" id="tab-priser" data-view="priser">Prisendringer<span class="n" id="n-priser"></span></button>
+      <button class="tab" role="tab" id="tab-solgt" data-view="solgt">Mest solgt<span class="n" id="n-solgt"></span></button>
+      <button class="tab" role="tab" id="tab-tilbud" data-view="tilbud">På tilbud<span class="n" id="n-tilbud"></span></button>
+    </div>
+
+    <div class="controls">
+      <input id="q" type="search" placeholder="Søk etter produkt, merke eller kategori" aria-label="Søk">
+      <div class="seg" id="range" aria-label="Periode">
+        <button data-days="7">7 d</button><button data-days="30">30 d</button><button data-days="90">90 d</button><button data-days="365">1 år</button>
+      </div>
+      <select id="cat" aria-label="Kategori"></select>
+      <label class="check"><input type="checkbox" id="instock"> Bare på lager</label>
+    </div>
+
+    <div id="out" class="list"></div>
+  </main>
+
+  <footer id="foot"></footer>
+</div>
+</template>
+
+<script id="kb-data" type="application/json">
+__KAFFEBOX_DATA__
+</script>
+<script id="kb-app">
+(() => {
+  const D = JSON.parse(document.getElementById("kb-data").textContent);
+  const $ = (id) => document.getElementById(id);
+  // Markupen ligger urørt i <template>, så siden kan bygge en ny versjon av seg selv
+  const tpl = $("kb-markup");
+  tpl.after(tpl.content.cloneNode(true));
+  const ta = document.createElement("textarea");
+  const dec = (s) => { if (s == null) return ""; ta.innerHTML = s; return ta.value; };
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const kr = (n) => n == null ? "–" : n.toLocaleString("nb-NO", { minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2 }) + " kr";
+  const dayFmt = new Intl.DateTimeFormat("nb-NO", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+  const shortFmt = new Intl.DateTimeFormat("nb-NO", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+
+  const products = D.products.map((p) => ({ ...p, name: dec(p.name), brand: dec(p.brand), cats: p.cats.map(dec) }));
+  const byId = new Map(products.map((p) => [p.id, p]));
+  const events = D.events.map((e) => ({ ...e, name: dec(e.name) }));
+  const ref = new Date(D.updated);
+  const daysAgo = (iso) => (ref - new Date(iso)) / 864e5;
+
+  const priceEvents = events.filter((e) => e.kind === "pris" && e.from != null && e.to != null && e.from !== e.to);
+  const onSale = products.filter((p) => p.sale && p.regular > p.price);
+
+  // Kategorivalg: bare kategorier som finnes, sortert etter antall
+  const catCount = {};
+  products.forEach((p) => p.cats.forEach((c) => (catCount[c] = (catCount[c] || 0) + 1)));
+
+  let state = { view: "nyheter", days: 30, q: "", cat: "", instock: false, limit: 60 };
+  try { Object.assign(state, JSON.parse(localStorage.getItem("kb-state") || "{}")); } catch {}
+  const h = location.hash.slice(1);
+  if (["nyheter", "priser", "solgt", "tilbud"].includes(h)) state.view = h;
+  state.limit = 60;
+
+  // Nøkkeltall
+  $("updated").textContent = "Oppdatert " + shortFmt.format(ref);
+  $("s-new").textContent = products.filter((p) => daysAgo(p.date) <= 30).length;
+  $("s-price").textContent = priceEvents.length;
+  $("s-price-l").textContent = "prisendringer siden " + new Date(D.trackingSince).toLocaleDateString("nb-NO", { day: "numeric", month: "short" });
+  $("s-sale").textContent = onSale.length;
+  $("s-total").textContent = products.length.toLocaleString("nb-NO");
+  $("foot").innerHTML = `Kilde: kaffebox.no sitt åpne WooCommerce-API. Prisene sammenlignes mellom hver innhenting; første øyeblikksbilde er fra ${esc(D.trackingSince)}. Produktbilder er tatt med for nyheter, bestselgere og tilbud.`;
+
+  const matches = (p) => {
+    if (state.instock && p.stock === false) return false;
+    if (state.cat && !(p.cats || []).includes(state.cat)) return false;
+    if (state.q) {
+      const hay = (p.name + " " + (p.brand || "") + " " + (p.cats || []).join(" ")).toLowerCase();
+      if (!state.q.toLowerCase().split(/\s+/).every((w) => hay.includes(w))) return false;
+    }
+    return true;
+  };
+
+  const priceCell = (p) => {
+    if (p.min != null && p.max != null && p.min !== p.max) return `${kr(p.min)} – ${kr(p.max)}`;
+    if (p.sale && p.regular > p.price) return `<s>${kr(p.regular)}</s>${kr(p.price)}`;
+    return kr(p.price);
+  };
+  const meta = (p) => {
+    const bits = [];
+    if (p.brand) bits.push(esc(p.brand));
+    if (p.cats && p.cats.length) bits.push(esc(p.cats[p.cats.length - 1]));
+    if (p.stock === false) bits.push(`<span class="tag out">Utsolgt</span>`);
+    else if (p.qty != null && p.qty <= 5) bits.push(`<span class="tag out">${p.qty} igjen</span>`);
+    if (p.sale && p.regular > p.price) bits.push(`<span class="tag">−${Math.round((1 - p.price / p.regular) * 100)} %</span>`);
+    return bits.join("");
+  };
+  const thumb = (p) => D.images && D.images[p.id]
+    ? `<img class="thumb" src="${D.images[p.id]}" alt="" loading="lazy">`
+    : `<span class="thumb none" aria-hidden="true"></span>`;
+  const row = (p, right) => `<div class="row">
+      ${thumb(p)}
+      <a class="name" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>
+      <div class="price">${right ?? priceCell(p)}</div>
+      <div class="meta">${meta(p)}</div>
+    </div>`;
+
+  const groupByDay = (items, dateOf, render) => {
+    const groups = [];
+    let cur = null;
+    items.forEach((it) => {
+      const d = dateOf(it).slice(0, 10);
+      if (!cur || cur.d !== d) groups.push((cur = { d, items: [] }));
+      cur.items.push(it);
+    });
+    return groups.map((g) => `<section class="day"><h3><em>${dayFmt.format(new Date(g.d + "T12:00"))}</em>${g.items.length} stk</h3>${g.items.map(render).join("")}</section>`).join("");
+  };
+
+  const empty = (title, text) => `<div class="empty"><h3>${title}</h3><p>${text}</p></div>`;
+  const moreBtn = (total) => total > state.limit ? `<button class="more" id="more">Vis flere (${total - state.limit} til)</button>` : "";
+
+  function views() {
+    const nyheter = products.filter((p) => daysAgo(p.date) <= state.days && matches(p)).sort((a, b) => b.date.localeCompare(a.date));
+    const priser = priceEvents.filter((e) => matches(byId.get(e.id) || { name: e.name, cats: [] })).sort((a, b) => b.at.localeCompare(a.at));
+    // Nyeste tilbud først: kjent startdato (saleSince) foran, deretter eldre tilbud etter sist endret
+    const saleKey = (p) => (p.saleSince ? "1" + p.saleSince : "0" + (p.modified || ""));
+    const tilbud = onSale.filter(matches).sort((a, b) => saleKey(b).localeCompare(saleKey(a)));
+    // Antatt solgt = sum av nedganger i lagerantall i perioden
+    const sold = new Map();
+    events.forEach((e) => {
+      if (e.kind !== "solgt" || daysAgo(e.at) > state.days) return;
+      const p = byId.get(e.id);
+      if (p && matches(p)) sold.set(e.id, (sold.get(e.id) || 0) + e.n);
+    });
+    const solgt = [...sold].map(([id, n]) => ({ p: byId.get(id), n })).sort((a, b) => b.n - a.n);
+    const topp = products.filter((p) => p.rank && matches(p)).sort((a, b) => a.rank - b.rank);
+    return { nyheter, priser, solgt, topp, tilbud };
+  }
+
+  function render() {
+    try { localStorage.setItem("kb-state", JSON.stringify({ days: state.days, cat: state.cat, instock: state.instock })); } catch {}
+    document.querySelectorAll(".tab").forEach((t) => t.setAttribute("aria-selected", String(t.dataset.view === state.view)));
+    document.querySelectorAll("#range button").forEach((b) => b.setAttribute("aria-pressed", String(+b.dataset.days === state.days)));
+    $("range").hidden = !["nyheter", "solgt"].includes(state.view);
+    $("q").value = state.q;
+    $("instock").checked = state.instock;
+
+    const v = views();
+    $("n-nyheter").textContent = v.nyheter.length;
+    $("n-priser").textContent = v.priser.length;
+    $("n-tilbud").textContent = v.tilbud.length;
+    $("n-solgt").textContent = v.solgt.length || "";
+
+    let html = "";
+    if (state.view === "nyheter") {
+      const items = v.nyheter.slice(0, state.limit);
+      html = items.length
+        ? groupByDay(items, (p) => p.date, (p) => row(p)) + moreBtn(v.nyheter.length)
+        : empty("Ingen nye produkter her", "Prøv en lengre periode eller fjern filtrene.");
+    } else if (state.view === "priser") {
+      const items = v.priser.slice(0, state.limit);
+      if (!priceEvents.length) {
+        html = empty("Ingen prisendringer registrert ennå",
+          `Prissporingen startet ${esc(D.trackingSince)}. Hver gang skriptet kjører, sammenlignes alle ${products.length.toLocaleString("nb-NO")} prisene med forrige gang, og endringer dukker opp her.`);
+      } else if (!items.length) {
+        html = empty("Ingen treff", "Ingen prisendringer passer filtrene.");
+      } else {
+        html = groupByDay(items, (e) => e.at, (e) => {
+          const p = byId.get(e.id) || { name: e.name, url: "#", cats: [] };
+          const diff = e.to - e.from;
+          const amount = e.from > 0 ? `${Math.round((diff / e.from) * 100)} %` : kr(diff);
+          const cls = diff > 0 ? "up" : "down";
+          return row(p, `<s>${kr(e.from)}</s>${kr(e.to)}<br><span class="pill ${cls}">${diff > 0 ? "▲ +" : "▼ "}${amount}</span>`);
+        }) + moreBtn(v.priser.length);
+      }
+    } else if (state.view === "solgt") {
+      const label = { 7: "7 dager", 30: "30 dager", 90: "90 dager", 365: "året" }[state.days];
+      html = `<div class="section-head"><h2>Solgt siste ${label}</h2>
+        <p>Anslått ut fra hvor mye lagerantallet har gått ned mellom hver innhenting. Gjelder varer der butikken teller lager (omtrent halvparten). Påfyll blir ikke regnet som salg.</p></div>`;
+      html += v.solgt.length
+        ? v.solgt.slice(0, 30).map(({ p, n }, i) => row(p, `≈ ${n} stk<br><span class="pill neutral">${p.qty ?? "–"} igjen</span>`).replace('rel="noopener">', `rel="noopener"><span class="rank">${i + 1}.</span>`)).join("")
+        : empty("Ingen salg registrert ennå", `Lagerantallet ble lagret første gang ${esc(D.trackingSince)}. Salget vises når skriptet har kjørt igjen og kan se hva som har gått ned.`);
+      const top = v.topp.slice(0, state.limit);
+      html += `<div class="section-head"><h2>Bestselgere totalt</h2>
+        <p>Butikkens egen rangering etter totalt antall solgte, gjennom hele produktets levetid. Selve antallet er ikke offentlig.</p></div>`;
+      html += top.map((p) => row(p).replace('rel="noopener">', `rel="noopener"><span class="rank">${p.rank}.</span>`)).join("") + moreBtn(v.topp.length);
+    } else {
+      const items = v.tilbud.slice(0, state.limit);
+      const fresh = items.filter((p) => p.saleSince), older = items.filter((p) => !p.saleSince);
+      const since = new Date(D.trackingSince).toLocaleDateString("nb-NO", { day: "numeric", month: "long" });
+      html = items.length ? "" : empty("Ingen tilbud her", "Ingen produkter på tilbud passer filtrene.");
+      if (fresh.length) {
+        html += `<div class="section-head"><h2>Nye tilbud</h2><p>Datoen er dagen vi første gang så produktet på tilbud.</p></div>`;
+        html += groupByDay(fresh, (p) => p.saleSince, (p) => row(p));
+      }
+      if (older.length) {
+        html += `<div class="section-head"><h2>${fresh.length ? "Tilbud fra før" : "På tilbud nå"}</h2>
+          <p>Disse var allerede på tilbud da sporingen startet ${since}. De er sortert etter når produktet sist ble endret i butikken, som ofte er dagen tilbudet ble lagt inn. Det er et anslag.</p></div>`;
+        html += groupByDay(older, (p) => p.modified || D.trackingSince, (p) => row(p));
+      }
+      html += moreBtn(v.tilbud.length);
+    }
+    $("out").innerHTML = html;
+    const m = $("more");
+    if (m) m.onclick = () => { state.limit += 60; render(); };
+  }
+
+  // Kategoriliste
+  $("cat").innerHTML = `<option value="">Alle kategorier</option>` +
+    Object.entries(catCount).sort((a, b) => b[1] - a[1]).map(([c, n]) => `<option value="${esc(c)}">${esc(c)} (${n})</option>`).join("");
+  if (!catCount[state.cat]) state.cat = "";
+  $("cat").value = state.cat;
+
+  document.querySelectorAll(".tab").forEach((t) => t.onclick = () => { state.view = t.dataset.view; state.limit = 60; history.replaceState(null, "", "#" + state.view); render(); });
+  document.querySelectorAll("#range button").forEach((b) => b.onclick = () => { state.days = +b.dataset.days; state.limit = 60; render(); });
+  $("q").oninput = (e) => { state.q = e.target.value; state.limit = 60; render(); };
+  $("cat").onchange = (e) => { state.cat = e.target.value; state.limit = 60; render(); };
+  $("instock").onchange = (e) => { state.instock = e.target.checked; render(); };
+  render();
+
+})();
+</script>
