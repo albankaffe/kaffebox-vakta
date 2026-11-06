@@ -1268,5 +1268,382 @@
     "id": 428312,
     "name": "Höganäs Chocolate 80% Dark Chocolate Bar with Cocoa nibs",
     "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "utsolgt",
+    "id": 305366,
+    "name": "Kuná 71% Raw Nibs &#038; Atacama Salt"
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "utsolgt",
+    "id": 316004,
+    "name": "Morin Peru Pablino 70% BIO"
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "utsolgt",
+    "id": 316099,
+    "name": "Naïve Rough Ground 75% BIO"
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "utsolgt",
+    "id": 319005,
+    "name": "Georgia Ramon Carolina Reaper Chili 70%"
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "utsolgt",
+    "id": 380760,
+    "name": "Zotter Labooko Variation &#8220;Vegan&#8221; – with Virtual Tasting (10 x 8g)"
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "utsolgt",
+    "id": 392979,
+    "name": "Zotter Labooko 70 % Peru Milk"
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "utsolgt",
+    "id": 406491,
+    "name": "Ocelot Sea Salt &#8211; 70% dark chocolate"
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "utsolgt",
+    "id": 439796,
+    "name": "Ethiopia Chelchele Natural Green Coffee Beans"
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 19547,
+    "name": "Scandinavian Specialty Coffee Advent Calendar",
+    "n": 27
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 179138,
+    "name": "Aeropress Coffee Maker &#8211; Original",
+    "n": 3
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 204608,
+    "name": "Hario Drip Kettle AIR hellekanne",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 222667,
+    "name": "KaffeBox Barista Brush &#8211; Rengjøringsbørste til kvern",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 236952,
+    "name": "Hario V60 Craft Coffee Maker Kit",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 270915,
+    "name": "Cafelat Silicone Group Gasket &#8211; Rancilio",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 273775,
+    "name": "KaffeBox Barista Cloth",
+    "n": 2
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 273863,
+    "name": "Milk Steaming Thermometer",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 298268,
+    "name": "Profitec Tamper Station / Portafilter Holder",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 298642,
+    "name": "Fjåk Sjokolade &#8211; 70% dark Madagascar Åkesson’s Estate Specialty Chocolate Bar",
+    "n": 35
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 305028,
+    "name": "Fjåk Sjokolade &#8211; 70% Dark Orange Drinking chocolate",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 305366,
+    "name": "Kuná 71% Raw Nibs &#038; Atacama Salt",
+    "n": 2
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 315071,
+    "name": "Zotter Labooko 75% Guatemala Craft Chocolate Bar",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 316004,
+    "name": "Morin Peru Pablino 70% BIO",
+    "n": 4
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 316099,
+    "name": "Naïve Rough Ground 75% BIO",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 319005,
+    "name": "Georgia Ramon Carolina Reaper Chili 70%",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 337125,
+    "name": "RAVN Puck Screen &#8211; 51mm &#8211; 1.7mm &#8211; 150μm",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 339005,
+    "name": "Fjåk 75 % Dark Tanzania craft chocolate bar",
+    "n": 24
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 340788,
+    "name": "Subminimal Flick WDT Tool",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 340793,
+    "name": "Fjåk Solbær smuldrepai &#8211; Blackcurrant Pie White Chocolate",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 356431,
+    "name": "Timemore Black Mirror 3 Coffee Brew Scale",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 358168,
+    "name": "Timemore Black Mirror Mini Espresso Scale",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 361523,
+    "name": "1Zpresso Q Air Manual Coffee Grinder",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 380760,
+    "name": "Zotter Labooko Variation &#8220;Vegan&#8221; – with Virtual Tasting (10 x 8g)",
+    "n": 2
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 392979,
+    "name": "Zotter Labooko 70 % Peru Milk",
+    "n": 2
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 397353,
+    "name": "Fellow Ode Gen 2 Coffee Hopper Replacement Part",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 406491,
+    "name": "Ocelot Sea Salt &#8211; 70% dark chocolate",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 420474,
+    "name": "AeroPress Travel Filter Holder",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 422367,
+    "name": "Extra Tube Set for KaffeBox Specialty Coffee Advent Calendar",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 422576,
+    "name": "Advent Chocolate Tasting pack",
+    "n": 3
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 426561,
+    "name": "Morin cocoa powder Peru Chanchamayo 100% (200 gr) BIO",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "paafyll",
+    "id": 428316,
+    "name": "Höganäs Chocolate 53% Dark milk &amp; Bourbon Vanilla",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 439796,
+    "name": "Ethiopia Chelchele Natural Green Coffee Beans",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "paafyll",
+    "id": 446782,
+    "name": "JoeFrex Barista Cloth Kit",
+    "n": 10
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 450026,
+    "name": "Fjorden Sjokolade Tomatoe in 68% Dark Chocolate",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 450033,
+    "name": "Friis Holm Indio Rojo 70 % Fine Chocolate Bar",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 456377,
+    "name": "Fjorden Sjokolade 75 % Dark Chocolate Mokkabønner",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 457411,
+    "name": "Fjåk Sichuan Pepper Milk Chocolate (50%)",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 471530,
+    "name": "Nord &#8211; Condor, Colombia &#8211; 250g",
+    "n": 2
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 471585,
+    "name": "Höganäs Chocolate White Caramel Chocolate Couverture (200g)",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 474312,
+    "name": "Alaka Korchema, Ethiopia Filter &#8211; Quo Coffee",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 474313,
+    "name": "Yaved&#8217;s Colombia, Finca la Fuente Filter &#8211; Quo Coffee",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 475005,
+    "name": "Yirgacheffe, Ethiopia Filter &#8211; AVE Kafferosteri",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 475006,
+    "name": "Tributos del Ota, Costa Rica Filter &#8211; AVE Kafferosteri",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 476712,
+    "name": "Flor del Rosario &amp; Tero Espresso Blend &#8211; Lippe",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 477107,
+    "name": "Red Gesha, Peru Filter &#8211; Piritu Coffee",
+    "n": 1
+  },
+  {
+    "at": "2026-11-06T06:50:23",
+    "kind": "solgt",
+    "id": 477133,
+    "name": "Diima Halo, Ethiopia Filter &#8211; Lippe",
+    "n": 1
   }
 ]
