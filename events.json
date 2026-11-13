@@ -4112,5 +4112,407 @@
     "from": 239,
     "url": "https://www.kaffebox.no/product/nord-uraga-ethiopia/",
     "img": "https://www.kaffebox.no/wp-content/uploads/2026/09/nord-ethiopia-247x296.jpg"
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paa_lager",
+    "id": 310270,
+    "name": "Chemex MG-X Double Walled Mug"
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paa_lager",
+    "id": 441309,
+    "name": "Hario Meteor Filter Paper"
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paa_lager",
+    "id": 457157,
+    "name": "Aeropress Flow Control Filter Cap XL"
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "utsolgt",
+    "id": 477135,
+    "name": "Caballero Pedernal, Honduras Filter &#8211; Lippe"
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 19547,
+    "name": "Scandinavian Specialty Coffee Advent Calendar",
+    "n": 22
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 179138,
+    "name": "Aeropress Coffee Maker &#8211; Original",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paafyll",
+    "id": 195878,
+    "name": "Origami Dripper Holder &#8211; Wood",
+    "n": 31
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 219508,
+    "name": "Fellow Prismo AeroPress Attachment",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paafyll",
+    "id": 220475,
+    "name": "Glass Chemex Cover / lokk",
+    "n": 6
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 236952,
+    "name": "Hario V60 Craft Coffee Maker Kit",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paafyll",
+    "id": 237030,
+    "name": "Chemex Cork Coaster",
+    "n": 2
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 244439,
+    "name": "Origami Dripper Holder &#8211; Plastic",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paafyll",
+    "id": 247870,
+    "name": "Hario V60 Drip Assist",
+    "n": 5
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paafyll",
+    "id": 247880,
+    "name": "Hario Drip Tray",
+    "n": 2
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paafyll",
+    "id": 268694,
+    "name": "Chemex Replacement Wood Collar",
+    "n": 2
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 272509,
+    "name": "KaffeBox WDT Needle Distribution Tool",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 273775,
+    "name": "KaffeBox Barista Cloth",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paafyll",
+    "id": 291283,
+    "name": "Fellow Shimmy Coffee Sieve",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 298471,
+    "name": "Pourx Oura Smart Light-Guided Coffee Scale",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 309191,
+    "name": "Vigdis Rosenkilde 80% Echarate Craft Chocolate Bar",
+    "n": 2
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paafyll",
+    "id": 310270,
+    "name": "Chemex MG-X Double Walled Mug",
+    "n": 3
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 311075,
+    "name": "Latitude Craft Chocolate &#8211; Rwenzori 80%",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paafyll",
+    "id": 334558,
+    "name": "AeroPress Flow Control Filter Cap",
+    "n": 9
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 334639,
+    "name": "Normcore Espresso Corner Tamping Station V3",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 334652,
+    "name": "Normcore WDT Distribution Tool V3 with Stand",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 340788,
+    "name": "Subminimal Flick WDT Tool",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 342357,
+    "name": "Zotter Labooko Chocolate Advent Calendar",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 356431,
+    "name": "Timemore Black Mirror 3 Coffee Brew Scale",
+    "n": 5
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 361523,
+    "name": "1Zpresso Q Air Manual Coffee Grinder",
+    "n": 2
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paafyll",
+    "id": 369677,
+    "name": "Aerobie AeroPress Carafe",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 370058,
+    "name": "Zotter Labooko Variation &#8220;Dark Chocolates&#8221; – with Virtual Tasting (10 x 8g)",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 380656,
+    "name": "Standout Chocolate Belize Maya Mountain 85% Dark Chocolate",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 388276,
+    "name": "Zotter Best Of Chocolate Advent Calendar",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 398397,
+    "name": "Vigdis Rosenkilde 70% Echarate Dark Chocolate",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 410139,
+    "name": "Vigdis Rosenkilde 70% Piura Blanco With Nibs Dark Chocolate",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 410145,
+    "name": "Vigdis Rosenkilde 100% Piura Blanco Dark Chocolate",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 421250,
+    "name": "The Physics of Espresso &#8211; Jonathan Gagné",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 422576,
+    "name": "Advent Chocolate Tasting pack",
+    "n": 2
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 426290,
+    "name": "Orea Z1 Zero-Bypass Brewer",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 426702,
+    "name": "Standout Chocolate Semuliki Forest Uganda 85%",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 439657,
+    "name": "Timemore C5S Pro Manual Coffee Grinder with Foldable Handle",
+    "n": 4
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paafyll",
+    "id": 441309,
+    "name": "Hario Meteor Filter Paper",
+    "n": 3
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 453367,
+    "name": "SSP 83mm Lab Sweet (LS) Burrs, Red Speed Coated",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "paafyll",
+    "id": 457157,
+    "name": "Aeropress Flow Control Filter Cap XL",
+    "n": 3
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 467677,
+    "name": "Vigdis Rosenkilde 70% Koribeni Dark Chocolate",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 471530,
+    "name": "Nord &#8211; Condor, Colombia &#8211; 250g",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 474064,
+    "name": "Loveramics Glass Jug Lid (8cm)",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 474083,
+    "name": "Loveramics Espresso Shot Jug 100ml",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 474314,
+    "name": "Monkaaba, Colombia Decaf &#8211; Quo Coffee",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 475005,
+    "name": "Yirgacheffe, Ethiopia Filter &#8211; AVE Kafferosteri",
+    "n": 3
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 475006,
+    "name": "Tributos del Ota, Costa Rica Filter &#8211; AVE Kafferosteri",
+    "n": 2
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 475007,
+    "name": "Gatagua, Kenya Filter &#8211; AVE Kafferosteri",
+    "n": 3
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 477107,
+    "name": "Red Gesha, Peru Filter &#8211; Piritu Coffee",
+    "n": 3
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 477110,
+    "name": "Yellow Gesha, Peru Filter &#8211; Piritu Coffee",
+    "n": 3
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 477135,
+    "name": "Caballero Pedernal, Honduras Filter &#8211; Lippe",
+    "n": 2
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 477507,
+    "name": "Nandi Hills, Kenya Espresso &#8211; Guido Coffee",
+    "n": 1
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 477509,
+    "name": "Inmaculada Pink Bourbon, Colombia Omni &#8211; Guido Coffee",
+    "n": 4
+  },
+  {
+    "at": "2026-11-13T06:51:42",
+    "kind": "solgt",
+    "id": 477513,
+    "name": "Origin Select, Colombia Decaf &#8211; Guido Coffee",
+    "n": 2
   }
 ]
